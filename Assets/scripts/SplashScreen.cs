@@ -12,11 +12,13 @@ public class SplashScreen : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Invoke("OpenNextScene", secTillScenesLoad);
+
 	}
 	
 	// Update is called once per frame
 	void OpenNextScene () {
         SceneManager.LoadScene(sceneToLoad);
-
+        
 	}
+
 }

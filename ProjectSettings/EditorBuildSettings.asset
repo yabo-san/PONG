@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/mainScene.unity
     guid: 33171846a1717bf47a551eb56721800a
+  - enabled: 1
+    path: Assets/scenes/2player.unity
+    guid: e2eb62709cf353744a82031506c33dc4
+  - enabled: 1
+    path: Assets/scenes/CRAZY HAND.unity
+    guid: c5e5d71afcddc03468f8920f9bca9748
+  - enabled: 1
+    path: Assets/scenes/selection.unity
+    guid: e9ff6b48ab5272343a54d2e0d6662b05
