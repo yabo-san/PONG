@@ -341,12 +341,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 183241776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60aa9dd46f02dc346b397456eb003b99, type: 3}
+  m_Script: {fileID: 11500000, guid: aad8c6f85efbcec449bd4fb048b9d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theBall: {fileID: 565731887}
   speed: 30
-  lerpTweak: -2
 --- !u!1 &254741379
 GameObject:
   m_ObjectHideFlags: 0

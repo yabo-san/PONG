@@ -345,8 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theBall: {fileID: 565731887}
-  speed: 30
-  lerpTweak: -2
+  speed: 300
+  lerpTweak: 100
 --- !u!1 &254741379
 GameObject:
   m_ObjectHideFlags: 0
