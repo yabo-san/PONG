@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePaddle : MonoBehaviour {
     public float speed = 30;
+    public string sceneToLoad;
+    public int secTillScenesLoad;
     // Use this for initialization
     private void FixedUpdate()
     {
@@ -16,6 +19,13 @@ public class MovePaddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKeyDown("q")){
+            Invoke("OpenNextScene", secTillScenesLoad);
+        }
 	}
+    void OpenNextScene()
+    {
+        SceneManager.LoadScene(sceneToLoad);
+
+    }
 }
