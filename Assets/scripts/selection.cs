@@ -14,7 +14,10 @@ public class selection : MonoBehaviour
     private void FixedUpdate()
     {
         float vertPress = Input.GetAxisRaw("Vertical");
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, vertPress) * speed;
+        float horzPress = Input.GetAxisRaw("Horizontal");
+        GetComponent<Rigidbody2D>().velocity = new Vector2(horzPress, vertPress) * speed;
+        
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(, 0) * speed;
     }
     void Start()
     {

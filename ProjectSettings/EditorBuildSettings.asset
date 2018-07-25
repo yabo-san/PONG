@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/selection.unity
     guid: e9ff6b48ab5272343a54d2e0d6662b05
+  - enabled: 1
+    path: Assets/scenes/CRAZY HAND SPLASH.unity
+    guid: e525c851fd4921a488fa8cce495a3aa6

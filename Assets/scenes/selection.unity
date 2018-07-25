@@ -786,7 +786,7 @@ MonoBehaviour:
   speed: 30
   sceneToLoad1: mainScene
   sceneToLoad2: 2player
-  sceneToLoad3: CRAZY HAND
+  sceneToLoad3: CRAZY HAND SPLASH
   secTillScenesLoad: 3
 --- !u!1 &1057423992
 GameObject:
