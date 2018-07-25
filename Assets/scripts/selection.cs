@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class selection : MonoBehaviour
 {
     public float speed = 30;
-    public string sceneToLoad1;
-    public string sceneToLoad2;
-    public string sceneToLoad3;
+    private string sceneToLoad;
+    public string scene1;
+    public string scene2;
+    public string scene3;
     public int secTillScenesLoad;
     // Use this for initialization
     private void FixedUpdate()
@@ -34,31 +35,25 @@ public class selection : MonoBehaviour
         //bottom or top
         if (col.gameObject.name == "wall top")
         {
-            Invoke("OpenNextScene1", secTillScenesLoad);
+            sceneToLoad = scene1;
+            Invoke("OpenNextScene", secTillScenesLoad);
         }
         if (col.gameObject.name == "wall bottom")
         {
-            Invoke("OpenNextScene2", secTillScenesLoad);
+            sceneToLoad = scene2;
+            Invoke("OpenNextScene", secTillScenesLoad);
         }
         if (col.gameObject.name == "right goal")
         {
-            Invoke("OpenNextScene3", secTillScenesLoad);
+            sceneToLoad = scene3;
+            Invoke("OpenNextScene", secTillScenesLoad);
         }
 
     }
-    void OpenNextScene1()
+    void OpenNextScene()
     {
-        SceneManager.LoadScene(sceneToLoad1);
+        SceneManager.LoadScene(sceneToLoad);
 
     }
-    void OpenNextScene2()
-    {
-        SceneManager.LoadScene(sceneToLoad2);
 
-    }
-    void OpenNextScene3()
-    {
-        SceneManager.LoadScene(sceneToLoad3);
-
-    }
 }
